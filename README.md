@@ -41,7 +41,7 @@ Before installing Scapy, make sure you have the following prerequisites:
 
 1. Run `python Detector.py -h` to see the help page
 
-2. The usage would be: `python Detector.py -t`
+2. The usage would be: `python Detector.py -t [IP]`
 
 The script will detect:
 1)  SYN Flood attacks that are coming from single IP address as source

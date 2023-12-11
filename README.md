@@ -10,8 +10,8 @@ This README provides instructions on how to run the Detector code.
   - [Installation](#installation)
     - [Prerequisites](#prerequisites)
     - [Installation Steps](#installation-steps)
-    - [Running the code](#running-the-code)
-    - [References](#References)
+  - [Running the code](#running-the-code)
+  - [References](#References)
 
 ## Installation
 
@@ -25,19 +25,13 @@ Before installing Scapy, make sure you have the following prerequisites:
 
 ### Installation Steps
 
-1. Open your terminal or command prompt.
-
-2. Install Scapy using pip by running the following command: `pip install scapy`
+1. From your terminal or command prompt, install Scapy using pip by running the following command: `pip install scapy`. This will download and install Scapy and its dependencies.
 
 
-    This will download and install Scapy and its dependencies.
+2. Once the installation is complete, you can clone our code using the command: git clone https://github.com/HadiElNawfal/TCP_SYN_Flood_Detection
 
 
-
-3. Once the installation is complete, you can clone our code using the command: git clone https://github.com/HadiElNawfal/TCP_SYN_Flood_Detection
-
-
-### Running the code
+## Running the code
 
 1. Run `python Detector.py -h` to see the help page
 
@@ -48,7 +42,7 @@ The script will detect:
 2)  SYN Flood attacks that are coming from randomly spoofed IP on subnet (doesn't have to be assigned)
 3)  SYN Flood attack that are coming from spoofed real IP (hosts that are on the subnet)
 
-### References
+## References
 
 1) [ChatGPT](https://chat.openai.com/ ) for parsing arguments and general syntax of scapy library
 

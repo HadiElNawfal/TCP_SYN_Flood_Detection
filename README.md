@@ -25,11 +25,16 @@ Before installing Scapy, make sure you have the following prerequisites:
 
 ### Installation Steps
 
-1. From your terminal or command prompt, install Scapy using pip by running the following command: `pip install scapy`. This will download and install Scapy and its dependencies.
+1. From your terminal or command prompt, install Scapy using pip by running the following command:
+```
+pip install scapy.
+```
+This will download and install Scapy and its dependencies.
 
-
-2. Once the installation is complete, you can clone our code using the command: git clone https://github.com/HadiElNawfal/TCP_SYN_Flood_Detection
-
+2. Once the installation is complete, you can clone our code using the command:
+```
+git clone https://github.com/HadiElNawfal/TCP_SYN_Flood_Detection
+```
 
 ## Running the code
 

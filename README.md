@@ -48,8 +48,5 @@ The script will detect:
 3)  SYN Flood attack that are coming from spoofed real IP (hosts that are on the subnet)
 
 ## References
-
-1) [ChatGPT](https://chat.openai.com/ ) for parsing arguments and general syntax of scapy library
-
-2) [Tcp Syn Flood Attack Detection and Prevention System using
+[Tcp Syn Flood Attack Detection and Prevention System using
 Adaptive Thresholding Method](https://doi.org/10.1051/itmconf/20213701016) for adaptive threshold formula

@@ -50,11 +50,11 @@ The script will detect:
 
 ## Limitations
 
-1. No Interface Specification
+1. No Interface Specification:
 The sniff() function does not specify a network interface (iface), which may result in unexpected behavior on multi-interface systems (e.g. sniffing only loopback by default).
-2. Single Host Focus
+2. Single Host Focus:
 The code only detects attacks targeting one IP (--target). SYN floods affecting multiple targets simultaneously will go unnoticed.
-3. Only SYN Detection
+3. Only SYN Detection:
 It detects only TCP SYN floods, and ignores ACK floods, FIN/RST floods, and Layer 7 (application-level) floods
 
 ## References

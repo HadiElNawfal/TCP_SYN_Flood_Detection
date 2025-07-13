@@ -11,6 +11,7 @@ This README provides instructions on how to run the Detector code.
     - [Prerequisites](#prerequisites)
     - [Installation Steps](#installation-steps)
   - [Running the code](#running-the-code)
+  - [Limitations](#limitations)
   - [References](#References)
 
 ## Installation
@@ -43,9 +44,18 @@ git clone https://github.com/HadiElNawfal/TCP_SYN_Flood_Detection
 2. The usage would be: `python Detector.py -t [IP]`
 
 The script will detect:
-1)  SYN Flood attacks that are coming from single IP address as source
-2)  SYN Flood attacks that are coming from randomly spoofed IP on subnet (doesn't have to be assigned)
-3)  SYN Flood attack that are coming from spoofed real IP (hosts that are on the subnet)
+1.  SYN Flood attacks that are coming from single IP address as source
+2.  SYN Flood attacks that are coming from randomly spoofed IP on subnet (doesn't have to be assigned)
+3.  SYN Flood attack that are coming from spoofed real IP (hosts that are on the subnet)
+
+## Limitations
+
+1. No Interface Specification
+The sniff() function does not specify a network interface (iface), which may result in unexpected behavior on multi-interface systems (e.g. sniffing only loopback by default).
+2. Single Host Focus
+The code only detects attacks targeting one IP (--target). SYN floods affecting multiple targets simultaneously will go unnoticed.
+3. Only SYN Detection
+It detects only TCP SYN floods, and ignores ACK floods, FIN/RST floods, and Layer 7 (application-level) floods
 
 ## References
 [Tcp Syn Flood Attack Detection and Prevention System using
